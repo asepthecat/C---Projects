@@ -1,16 +1,14 @@
 #include <iostream>
-namespace first{
-    int x = 1;
-}
-namespace second{
-    int x = 2;
-}
-int main() {
-    using namespace first;
-    int x = 0;
+#include <vector>
+
+typedef std::string text_t;
+typedef int number_t;
+
+int main(){
+    text_t fisrtName ="Bro";
+    number_t age =20;
+    std::cout << fisrtName << '\n';
+    std::cout << age << '\n';
     
-    std::cout << second::x;
     return 0;
 }
-
-//menit 30:53
